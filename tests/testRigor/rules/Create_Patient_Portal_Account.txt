@@ -1,0 +1,7 @@
+click "Patient"
+click "Dashboard"
+click "Create" below "Patient Portal"
+enter "password" into "Password"
+click "Save"
+wait 2 sec
+click "Cancel" using OCR only using the mouse

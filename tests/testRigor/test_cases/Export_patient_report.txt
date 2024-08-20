@@ -1,0 +1,11 @@
+Login_and_Validate
+Navigate_to_Patient_Creation_Search
+Create_Patient
+wait 1 sec until page contains saved value "firstName"
+//Prepare report
+click "Report" below saved value "firstName"
+click "Check All"
+click "Download PDF" below "Check All"
+//Validate report
+check that downloaded file contains string with parameters "${firstName} ${lastName}"
+check that downloaded file contains stored value "nowDateIso"

@@ -1,0 +1,9 @@
+Login_and_Validate
+Navigate_to_Patient_Creation_Search
+Create_Patient
+wait 1 sec until page contains saved value "firstName"
+Create_Patient_Portal_Account
+Open_Patient_Portal
+click "Menu"
+click "Profile"
+check that page contains string with parameters "${firstName} ${lastName}"

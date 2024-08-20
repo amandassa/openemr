@@ -1,0 +1,31 @@
+Login_and_Validate
+Navigate_to_Patient_Creation_Search
+Create_Patient
+wait 1 sec until page contains saved value "lastName"
+click "Close" on the right of saved value "lastName" if exists
+Navigate_to_Patient_Creation_Search
+// grab pacient ID
+enter saved value "firstName" into "First Name"
+click "Search"
+enter saved value "firstName" into "Search by Name"
+wait 1 sec until page contains string with parameters "${lastName}, ${firstName}"
+grab value from below "External ID", then save as "pacientID"
+//create and send a message
+click "Messages"
+click "Add New"
+select "Administrator" from "Select User"
+click "Click to add patient"
+wait 1 sec until page contains "Patient name" on the left of "Patient ID"
+click "Enter ID"
+type saved value "pacientID"
+click saved value "pacientID" below saved value "pacientID"
+click "Add to list"
+click "Ok"
+enter "Testing" into "note"
+click "Send Message"
+//validate message
+check that page contains saved value "firstName"
+//clean up
+click checkbox on the left of saved value "firstName"
+click "Delete" on the right of "Add New"
+check that page doesn't contain saved value "firstName"

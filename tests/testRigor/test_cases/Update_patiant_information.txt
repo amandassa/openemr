@@ -1,0 +1,14 @@
+Login_and_Validate
+Navigate_to_Patient_Creation_Search
+Create_Patient
+wait 1 sec until page contains saved value "firstName"
+// Create allegies
+click third element on the right of "Allergies"
+click "Add" on the right of "Allergies"
+wait 1 sec until page contains "Add/Edit Issue"
+enter "codeine" into "Select from list"
+enter enter
+click "Save"
+// Validate allegies creation
+click saved value "firstName"
+check that page contains "codeine" below "Allergies"

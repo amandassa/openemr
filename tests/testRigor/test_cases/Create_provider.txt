@@ -1,0 +1,14 @@
+Login_and_Validate
+//Navigate Providers
+click "Procedures"
+click "Providers" below "Procedures"
+// Create Provider
+click "Add New"
+generate from template "%********", then enter into "NPI" and save as "npi"
+click "Save"
+//Validate provider
+check that page contains saved value "npi"
+click "Edit" on the right of saved value "npi"
+//Clean up
+click "Delete"
+check that page doesn't contain saved value "npi"

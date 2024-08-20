@@ -1,0 +1,29 @@
+Login_and_Validate
+Navigate_to_Patient_Creation_Search
+Create_Patient
+wait 1 sec until page contains string with parameters "${firstName} ${lastName}"
+//Create Appointment
+click third element on the right of "Appointments"
+click "Ok" using the mouse using OCR only if page contains "New Due Clinical Reminders" using OCR only
+select "Office Visit" from "category"
+click "Save"
+if "Available Appointments Calendar" is visible
+click "close" on the right of "Available Appointments Calendar"
+end
+wait 1 sec until page contains "Office Visit" below "Future Appointments"
+//Navigate to payment
+click "Fees"
+click "Payment"
+//Create a payment
+wait 1 sec until page contains "Payment Method"
+select "Credit Card" from "Payment Method"
+enter "1000" into "paying"
+click "Generate Invoice"
+check that page contains "Receipt for Payment"
+Create_Patient_Portal_Account
+Open_Patient_Portal
+//Validation of Payment Creation
+click "Dashboard"
+click "Make payment"
+wait 1 sec until page contains "Accept Payment for"
+check that page contains "1,000.00" below "Patient Balance"

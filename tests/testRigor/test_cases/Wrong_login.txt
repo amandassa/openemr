@@ -1,0 +1,6 @@
+// Setting wrong credentials
+save value "wrong" as "username"
+save value "worng" as "password"
+login
+// Validation wrong login
+check that page contains "Invalid username or password"
