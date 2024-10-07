@@ -11,6 +11,12 @@
 #
 FROM php:8.4-rc-fpm
 
+#
+# TODO
+# Add back the redis statement in line 51 below when it works in the future
+# TODO
+#
+
 # Update
 RUN apt-get update
 
@@ -20,7 +26,11 @@ RUN apt-get update
 #  and instead rely on php scripts, if possible.
 RUN apt-get install -y mariadb-client \
                        imagemagick \
-                       nodejs
+                       curl
+
+# Install correct version nodejs
+RUN curl -sL https://deb.nodesource.com/setup_20.x  | bash -
+RUN apt-get install nodejs -y
 
 # Add the php extensions (note using a very cool script by mlocati to do this)
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
@@ -37,8 +47,8 @@ RUN chmod uga+x /usr/local/bin/install-php-extensions && sync && \
                            tokenizer \
                            xmlreader \
                            calendar \
-                           intl \
-                           redis
+                           intl
+                           #redis
 
 # Copy over the php.ini conf
 COPY php.ini /usr/local/etc/php/php.ini
