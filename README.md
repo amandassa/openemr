@@ -38,7 +38,7 @@ Check out [DOCKER_README.md](DOCKER_README.md)
 
 ### End-to-End testRigor
 
-Check out [TESTRIGOR_README.md](./tests/testRigor/README.md)
+Check out [TESTRIGOR's README.md](./tests/testRigor/README.md)
 
 ### FHIR
 

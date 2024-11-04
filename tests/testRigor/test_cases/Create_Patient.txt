@@ -1,6 +1,0 @@
-Login_and_Validate
-Navigate_to_Patient_Creation_Search
-Create_Patient
-//Validate patient creation
-wait 1 sec until page contains saved value "firstName"
-check that page contains saved value "lastName"

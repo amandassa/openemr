@@ -1,0 +1,33 @@
+Login_and_Validate
+Navigate_to_Patient_Creation_Search
+Create_Patient
+Create_Patient_Portal_Account
+// send message from patient to admin
+// start browser "Patient" and switch     // tests are crashing when switching browsers, changed to tab sessions
+open new tab
+Open_Patient_Portal
+click button "Securely Message" if exists
+click button "Secure Messaging" if exists
+click button "Actions"
+click "Compose"
+select "Administrator" from "To"
+enter "Test" into "Subject"
+save text "Testing 123" as "message"
+enter saved value "message" into field roughly below "Subject"
+click button "Send"
+Logout_patient_portal
+// validate message from receiver's account
+open new tab
+open url saved value "homePrefix"
+Login_and_Validate
+check that page contains "Portal" below "Current User"
+click button "Portal"
+click "Portal Mail"
+click "Inbox"
+check that page contains saved value "first_name" roughly on the left of saved value "message"
+click saved value "message"
+//clean up
+click button "Delete" if exists
+click button "Archive this message" if exists
+click button "refresh"
+check that page does not contain saved value "first_name" roughly on the left of saved value "message"

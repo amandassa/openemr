@@ -1,0 +1,15 @@
+Login_and_Validate
+Navigate_to_Patient_Creation_Search
+Create_Patient
+// Create allergies
+click third element on the right of "Allergies"
+click "Add" on the right of "Allergies"
+check that page contains "Add/Edit Issue"
+click "Select from list"
+type "codeine"
+type enter
+click "Save"
+check that page does not contain "Add/Edit Issue"
+// Validate allegies creation
+click saved value "first_name"
+check that page contains "codeine" roughly below "Allergies"

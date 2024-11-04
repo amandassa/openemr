@@ -1,0 +1,4 @@
+click "Dashboard"
+click "Menu" if exists
+click "Logout"
+check that page contains "You have been successfully logged out."

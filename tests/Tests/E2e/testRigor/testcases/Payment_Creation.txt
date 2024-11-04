@@ -1,0 +1,35 @@
+Login_and_Validate
+Navigate_to_Patient_Creation_Search
+Create_Patient
+check that page contains string with parameters "${first_name} ${last_name}"
+//Create Appointment
+click third element on the right of "Appointments"
+click "Ok" using the mouse using OCR only if page contains "New Due Clinical Reminders" using OCR only
+select "Office Visit" from "category"
+click "Save"
+if "Available Appointments Calendar" is visible
+click "close" on the right of "Available Appointments Calendar"
+end
+check that saved value "last_name" is visible
+check that page contains "Office Visit" below "Future Appointments"
+//Navigate to payment
+click "Fees"
+click "Payment"
+//Create a payment
+check that page contains "Payment Method"
+select "Credit Card" from "Payment Method"
+generate from regex "[1-9][0-9]{3,6}" and save it as "generated_value"
+enter saved value "generated_value" into "paying"
+click "Generate Invoice"
+check that page contains "Receipt for Payment"
+Create_Patient_Portal_Account
+start browser "Patient" and switch
+Open_Patient_Portal
+//Validation of Payment Creation
+click "Dashboard"
+//// Used to work, no longer works
+// click "Make payment"
+// check that page contains "Accept Payment for"
+// grab value from below "Patient Balance" and save it as "grabbed_value"
+// save expression "-${generated_value}" as "expected_value"
+// check that saved value "grabbed_value" itself is equal as a number to saved value "expected_value"

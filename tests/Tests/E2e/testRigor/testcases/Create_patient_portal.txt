@@ -1,0 +1,11 @@
+Login_and_Validate
+Navigate_to_Patient_Creation_Search
+Create_Patient
+check that page contains saved value "first_name"
+Create_Patient_Portal_Account
+start browser "Patient" and switch
+Open_Patient_Portal
+click "Menu"
+click "Profile"
+check that page contains string with parameters "${first_name} ${last_name}"
+Logout_patient_portal
