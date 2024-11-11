@@ -1,7 +1,5 @@
-Login_and_Validate
-click "Admin"
-click "Users"
-check that page contains "User / Groups"
+LoginAndValidate
+NavigateToUsersGroups
 click button "Add User"
 check that button "Save" is visible
 save "Testing#123" as "staff_pwd"
@@ -19,29 +17,24 @@ check that page doesn't contain button "Save"
 check that table "table-responsive" at row saved value "generated_username" and column "Real Name" contains string with parameters "${gen_first_name} ${gen_last_name}"
 // login as staff in a new session
 start browser "Staff User" and switch
-hover over the middle of the screen
 check that page contains input "Username"
 check that page contains input "Password"
 check that page contains button "Login"
-login_as_staff
-validate_login
+LoginAsStaff
+ValidateLogin
 logout
 // Back to admin and clean up
-switch to browser "default"
-wait 5 sec
-hover over the middle of the screen
-check that page contains "User / Groups"
-check that page contains button "Add User"
+// switch to browser "default"
+LoginAndValidate
+NavigateToUsersGroups
 click saved value "generated_username"
 click checkbox "Active"
 click button "Save"
 // assert is not in list anymore
 check that page contains "User / Groups"
 check that page doesn't contain "generated_username"
-switch to browser "Staff User"
-wait 5 sec
-hover over the middle of the screen
-reload
-validate_logout  // validates that user was disconnected
-login_as_staff
-validate_unsuccessful_login
+logout
+ValidateLogout
+start browser "Inactive Staff" and switch
+LoginAsStaff
+ValidateUnsuccessfulLogin

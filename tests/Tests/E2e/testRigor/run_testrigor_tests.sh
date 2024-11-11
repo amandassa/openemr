@@ -6,13 +6,14 @@ npm install -g testrigor-cli
 BRANCH_NAME="$(git rev-parse --abbrev-ref HEAD)"
 COMMIT_NAME="$(git rev-parse --verify HEAD)"
 
-# Define suite ID and auth token in .env file
-# OPENEMR_TEST_SUITE_ID=<your_suite_id>
-# OPENEMR_AUTH_TOKEN=<your_suite_auth_token>
+# Source the .env file
 source tests/Tests/E2e/testRigor/.env
 
-# Define the following 
-LOCALHOST_URL="http://localhost:8300/"
+# Define default values for missing variables
+# 
+OPENEMR_TEST_SUITE_ID="${OPENEMR_TEST_SUITE_ID:-bpCriLgskAyPkTD9f}"
+OPENEMR_AUTH_TOKEN="${OPENEMR_AUTH_TOKEN:-45c2e22b-da8f-4047-a10b-270a36569154}"
+LOCALHOST_URL="${LOCALHOST_URL:-http://localhost:8300/}"
 
 # Paths for the test cases and rules files
 TEST_CASES_PATH="tests/Tests/E2e/testRigor/testcases/**/*.txt"

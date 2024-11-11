@@ -1,6 +1,0 @@
-Login
-check that page contains "Providers"
-click "Patient"
-check if page contains "New/Search"
-click "New Appointment"
-enter "John Doe" into "Patient:"

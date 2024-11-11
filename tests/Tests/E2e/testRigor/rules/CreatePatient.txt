@@ -1,8 +1,8 @@
 select "Mr." from "Title"
 // generate unique name, then enter into "First Name" and save as "first_name"
 // generate unique name, then enter into "Last Name" and save as "last_name"
-generate from template "First$$$$$$$", then enter into "First Name" and save as "first_name"
-generate from template "Last$$$$$$$", then enter into "Last Name" and save as "last_name"
+generate from template "First$$$$$$$", then enter into "First Name" and save as "firstName"
+generate from template "Last$$$$$$$", then enter into "Last Name" and save as "lastName"
 select "Male" from "Sex"
 enter "2001-11-22" into "Date of Birth"
 click "Contact"
@@ -15,5 +15,5 @@ scroll down until page contains "Create New Patient"
 click "Create New Patient"
 click "Confirm Create New Patient"
 // "New Due Clinical Reminders"
-accept prompt with value "" if "New Due Clinical Reminders" is visible using OCR only
-check that page contains saved value "first_name"
+HandleBrowserAlert
+check that page contains saved value "firstName"
