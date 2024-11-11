@@ -1,7 +1,6 @@
-Login_and_Validate
-Navigate_to_Patient_Creation_Search
-Create_Patient
-wait 1 sec until page contains saved value "firstName"
+LoginAndValidate
+NavigateToPatientCreationSearch
+CreatePatient
 //Prepare report
 click "Report" below saved value "firstName"
 click "Check All"

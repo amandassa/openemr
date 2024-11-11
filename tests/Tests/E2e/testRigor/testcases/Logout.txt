@@ -1,4 +1,4 @@
-Login_and_Validate
+LoginAndValidate
 //logout
 click "Current User"
 click "Logout"

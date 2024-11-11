@@ -1,2 +1,0 @@
-login
-wait 1 sec up to 20 times until page contains string with parameters "${todayDayOfWeek}, ${todayMonth} ${todayDayOfMonth}, ${todayYear}"
