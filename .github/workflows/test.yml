@@ -59,6 +59,9 @@ jobs:
           TEST_SUITE_ID: ${{ vars.OPENEMR_TEST_SUITE_ID }}
           AUTH_TOKEN: ${{ secrets.OPENEMR_AUTH_TOKEN }}
           WORKSPACE_DIR: ${{ github.workspace }}
+          BRANCH: ${{ github.ref_name }}
+          COMMIT: ${{ github.sha }}	
+          JOB_ID: ${{ github.job }}
         run: |
           source ci/ciLibrary.source
           build_testrigor_tests
@@ -162,6 +165,9 @@ jobs:
           TEST_SUITE_ID: ${{ vars.OPENEMR_TEST_SUITE_ID }}
           AUTH_TOKEN: ${{ secrets.OPENEMR_AUTH_TOKEN }}
           WORKSPACE_DIR: ${{ github.workspace }}
+          BRANCH: ${{ github.ref_name }}
+          COMMIT: ${{ github.sha }}	
+          JOB_ID: ${{ github.job }}
         run: |
           source ci/ciLibrary.source
           build_testrigor_tests
@@ -265,6 +271,9 @@ jobs:
           TEST_SUITE_ID: ${{ vars.OPENEMR_TEST_SUITE_ID }}
           AUTH_TOKEN: ${{ secrets.OPENEMR_AUTH_TOKEN }}
           WORKSPACE_DIR: ${{ github.workspace }}
+          BRANCH: ${{ github.ref_name }}
+          COMMIT: ${{ github.sha }}	
+          JOB_ID: ${{ github.job }}
         run: |
           source ci/ciLibrary.source
           build_testrigor_tests
@@ -368,6 +377,9 @@ jobs:
           TEST_SUITE_ID: ${{ vars.OPENEMR_TEST_SUITE_ID }}
           AUTH_TOKEN: ${{ secrets.OPENEMR_AUTH_TOKEN }}
           WORKSPACE_DIR: ${{ github.workspace }}
+          BRANCH: ${{ github.ref_name }}
+          COMMIT: ${{ github.sha }}	
+          JOB_ID: ${{ github.job }}
         run: |
           source ci/ciLibrary.source
           build_testrigor_tests
@@ -471,6 +483,9 @@ jobs:
           TEST_SUITE_ID: ${{ vars.OPENEMR_TEST_SUITE_ID }}
           AUTH_TOKEN: ${{ secrets.OPENEMR_AUTH_TOKEN }}
           WORKSPACE_DIR: ${{ github.workspace }}
+          BRANCH: ${{ github.ref_name }}
+          COMMIT: ${{ github.sha }}	
+          JOB_ID: ${{ github.job }}
         run: |
           source ci/ciLibrary.source
           build_testrigor_tests
@@ -574,6 +589,9 @@ jobs:
           TEST_SUITE_ID: ${{ vars.OPENEMR_TEST_SUITE_ID }}
           AUTH_TOKEN: ${{ secrets.OPENEMR_AUTH_TOKEN }}
           WORKSPACE_DIR: ${{ github.workspace }}
+          BRANCH: ${{ github.ref_name }}
+          COMMIT: ${{ github.sha }}	
+          JOB_ID: ${{ github.job }}
         run: |
           source ci/ciLibrary.source
           build_testrigor_tests
@@ -677,6 +695,9 @@ jobs:
           TEST_SUITE_ID: ${{ vars.OPENEMR_TEST_SUITE_ID }}
           AUTH_TOKEN: ${{ secrets.OPENEMR_AUTH_TOKEN }}
           WORKSPACE_DIR: ${{ github.workspace }}
+          BRANCH: ${{ github.ref_name }}
+          COMMIT: ${{ github.sha }}	
+          JOB_ID: ${{ github.job }}
         run: |
           source ci/ciLibrary.source
           build_testrigor_tests
@@ -780,6 +801,9 @@ jobs:
           TEST_SUITE_ID: ${{ vars.OPENEMR_TEST_SUITE_ID }}
           AUTH_TOKEN: ${{ secrets.OPENEMR_AUTH_TOKEN }}
           WORKSPACE_DIR: ${{ github.workspace }}
+          BRANCH: ${{ github.ref_name }}
+          COMMIT: ${{ github.sha }}	
+          JOB_ID: ${{ github.job }}
         run: |
           source ci/ciLibrary.source
           build_testrigor_tests
@@ -883,6 +907,9 @@ jobs:
           TEST_SUITE_ID: ${{ vars.OPENEMR_TEST_SUITE_ID }}
           AUTH_TOKEN: ${{ secrets.OPENEMR_AUTH_TOKEN }}
           WORKSPACE_DIR: ${{ github.workspace }}
+          BRANCH: ${{ github.ref_name }}
+          COMMIT: ${{ github.sha }}	
+          JOB_ID: ${{ github.job }}
         run: |
           source ci/ciLibrary.source
           build_testrigor_tests
@@ -986,6 +1013,9 @@ jobs:
           TEST_SUITE_ID: ${{ vars.OPENEMR_TEST_SUITE_ID }}
           AUTH_TOKEN: ${{ secrets.OPENEMR_AUTH_TOKEN }}
           WORKSPACE_DIR: ${{ github.workspace }}
+          BRANCH: ${{ github.ref_name }}
+          COMMIT: ${{ github.sha }}	
+          JOB_ID: ${{ github.job }}
         run: |
           source ci/ciLibrary.source
           build_testrigor_tests
@@ -1089,6 +1119,9 @@ jobs:
           TEST_SUITE_ID: ${{ vars.OPENEMR_TEST_SUITE_ID }}
           AUTH_TOKEN: ${{ secrets.OPENEMR_AUTH_TOKEN }}
           WORKSPACE_DIR: ${{ github.workspace }}
+          BRANCH: ${{ github.ref_name }}
+          COMMIT: ${{ github.sha }}	
+          JOB_ID: ${{ github.job }}
         run: |
           source ci/ciLibrary.source
           build_testrigor_tests
@@ -1193,6 +1226,9 @@ jobs:
           TEST_SUITE_ID: ${{ vars.OPENEMR_TEST_SUITE_ID }}
           AUTH_TOKEN: ${{ secrets.OPENEMR_AUTH_TOKEN }}
           WORKSPACE_DIR: ${{ github.workspace }}
+          BRANCH: ${{ github.ref_name }}
+          COMMIT: ${{ github.sha }}	
+          JOB_ID: ${{ github.job }}
         run: |
           source ci/ciLibrary.source
           build_testrigor_tests
@@ -1296,6 +1332,9 @@ jobs:
           TEST_SUITE_ID: ${{ vars.OPENEMR_TEST_SUITE_ID }}
           AUTH_TOKEN: ${{ secrets.OPENEMR_AUTH_TOKEN }}
           WORKSPACE_DIR: ${{ github.workspace }}
+          BRANCH: ${{ github.ref_name }}
+          COMMIT: ${{ github.sha }}	
+          JOB_ID: ${{ github.job }}
         run: |
           source ci/ciLibrary.source
           build_testrigor_tests

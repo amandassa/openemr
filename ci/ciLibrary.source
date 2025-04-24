@@ -154,8 +154,9 @@ build_testrigor_tests() {
         "$TEST_SUITE_ID" \
         "$AUTH_TOKEN" \
         "$WORKSPACE_DIR" \
-        "$BRANCH_NAME" \
-        "$COMMIT_NAME"
+        "$BRANCH" \
+        "$COMMIT" \
+        "$JOB_ID"
     if $failTest; then
       exit 1
     fi
