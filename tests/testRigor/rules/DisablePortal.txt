@@ -1,0 +1,8 @@
+LoginAndValidate
+click "Admin"
+click "Config"
+click "Portal"
+click checkbox on the right of exactly "Enable Patient Portal" if checkbox on the right of exactly "Enable Patient Portal" is checked
+click button "Save"
+OpenPortalPage
+validate that page doesn't contain "OpenEMR Portal Login"

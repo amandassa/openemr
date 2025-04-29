@@ -1,1 +1,1 @@
-open url from string with parameters "${homePrefix}/portal/patient/index.php"
+open url from string with parameters "${homePrefix}/portal"

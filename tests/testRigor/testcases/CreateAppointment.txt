@@ -1,6 +1,10 @@
 LoginAndValidate
 NavigateToPatientCreationSearch
 CreatePatient
+if page doesn't contain "Future Appointments"
+click string with parameters "${firstName} ${lastName}"
+wait 10 sec up to 6 times until page contains "Clinical Reminders"
+end
 //validate there is no appointments
 check that page contains "No Appointments" below "Future Appointments"
 check that page contains "No Recurring Appointments" below "Recurring Appointments"

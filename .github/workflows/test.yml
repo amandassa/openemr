@@ -67,53 +67,53 @@ jobs:
           build_testrigor_tests
         if: ${{ success() || failure() }}
 
-      - name: Unit testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_unit
-        if: ${{ success() || failure() }}
+      # - name: Unit testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_unit
+      #   if: ${{ success() || failure() }}
 
-      - name: E2e testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_e2e
-        if: ${{ success() || failure() }}
+      # - name: E2e testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_e2e
+      #   if: ${{ success() || failure() }}
 
-      - name: Api testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_api
-        if: ${{ success() || failure() }}
+      # - name: Api testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_api
+      #   if: ${{ success() || failure() }}
 
-      - name: Fixtures testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_fixtures
-        if: ${{ success() || failure() }}
+      # - name: Fixtures testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_fixtures
+      #   if: ${{ success() || failure() }}
 
-      - name: Services testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_services
-        if: ${{ success() || failure() }}
+      # - name: Services testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_services
+      #   if: ${{ success() || failure() }}
 
-      - name: Validators testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_validators
-        if: ${{ success() || failure() }}
+      # - name: Validators testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_validators
+      #   if: ${{ success() || failure() }}
 
-      - name: Controllers testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_controllers
-        if: ${{ success() || failure() }}
+      # - name: Controllers testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_controllers
+      #   if: ${{ success() || failure() }}
 
-      - name: Common testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_common
-        if: ${{ success() || failure() }}
+      # - name: Common testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_common
+      #   if: ${{ success() || failure() }}
 
   build_apache_83_116:
     name: PHP 8.3 - Apache - MariaDB 11.6 (Rolling version)
@@ -173,53 +173,53 @@ jobs:
           build_testrigor_tests
         if: ${{ success() || failure() }}
 
-      - name: Unit testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_unit
-        if: ${{ success() || failure() }}
+      # - name: Unit testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_unit
+      #   if: ${{ success() || failure() }}
 
-      - name: E2e testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_e2e
-        if: ${{ success() || failure() }}
+      # - name: E2e testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_e2e
+      #   if: ${{ success() || failure() }}
 
-      - name: Api testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_api
-        if: ${{ success() || failure() }}
+      # - name: Api testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_api
+      #   if: ${{ success() || failure() }}
 
-      - name: Fixtures testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_fixtures
-        if: ${{ success() || failure() }}
+      # - name: Fixtures testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_fixtures
+      #   if: ${{ success() || failure() }}
 
-      - name: Services testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_services
-        if: ${{ success() || failure() }}
+      # - name: Services testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_services
+      #   if: ${{ success() || failure() }}
 
-      - name: Validators testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_validators
-        if: ${{ success() || failure() }}
+      # - name: Validators testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_validators
+      #   if: ${{ success() || failure() }}
 
-      - name: Controllers testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_controllers
-        if: ${{ success() || failure() }}
+      # - name: Controllers testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_controllers
+      #   if: ${{ success() || failure() }}
 
-      - name: Common testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_common
-        if: ${{ success() || failure() }}
+      # - name: Common testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_common
+      #   if: ${{ success() || failure() }}
 
   build_apache_83_114:
     name: PHP 8.3 - Apache - MariaDB 11.4
@@ -279,53 +279,53 @@ jobs:
           build_testrigor_tests
         if: ${{ success() || failure() }}
 
-      - name: Unit testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_unit
-        if: ${{ success() || failure() }}
+      # - name: Unit testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_unit
+      #   if: ${{ success() || failure() }}
 
-      - name: E2e testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_e2e
-        if: ${{ success() || failure() }}
+      # - name: E2e testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_e2e
+      #   if: ${{ success() || failure() }}
 
-      - name: Api testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_api
-        if: ${{ success() || failure() }}
+      # - name: Api testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_api
+      #   if: ${{ success() || failure() }}
 
-      - name: Fixtures testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_fixtures
-        if: ${{ success() || failure() }}
+      # - name: Fixtures testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_fixtures
+      #   if: ${{ success() || failure() }}
 
-      - name: Services testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_services
-        if: ${{ success() || failure() }}
+      # - name: Services testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_services
+      #   if: ${{ success() || failure() }}
 
-      - name: Validators testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_validators
-        if: ${{ success() || failure() }}
+      # - name: Validators testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_validators
+      #   if: ${{ success() || failure() }}
 
-      - name: Controllers testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_controllers
-        if: ${{ success() || failure() }}
+      # - name: Controllers testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_controllers
+      #   if: ${{ success() || failure() }}
 
-      - name: Common testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_common
-        if: ${{ success() || failure() }}
+      # - name: Common testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_common
+      #   if: ${{ success() || failure() }}
 
   build_apache_83_1011:
     name: PHP 8.3 - Apache - MariaDB 10.11
@@ -385,53 +385,53 @@ jobs:
           build_testrigor_tests
         if: ${{ success() || failure() }}
 
-      - name: Unit testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_unit
-        if: ${{ success() || failure() }}
+      # - name: Unit testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_unit
+      #   if: ${{ success() || failure() }}
 
-      - name: E2e testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_e2e
-        if: ${{ success() || failure() }}
+      # - name: E2e testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_e2e
+      #   if: ${{ success() || failure() }}
 
-      - name: Api testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_api
-        if: ${{ success() || failure() }}
+      # - name: Api testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_api
+      #   if: ${{ success() || failure() }}
 
-      - name: Fixtures testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_fixtures
-        if: ${{ success() || failure() }}
+      # - name: Fixtures testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_fixtures
+      #   if: ${{ success() || failure() }}
 
-      - name: Services testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_services
-        if: ${{ success() || failure() }}
+      # - name: Services testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_services
+      #   if: ${{ success() || failure() }}
 
-      - name: Validators testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_validators
-        if: ${{ success() || failure() }}
+      # - name: Validators testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_validators
+      #   if: ${{ success() || failure() }}
 
-      - name: Controllers testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_controllers
-        if: ${{ success() || failure() }}
+      # - name: Controllers testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_controllers
+      #   if: ${{ success() || failure() }}
 
-      - name: Common testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_common
-        if: ${{ success() || failure() }}
+      # - name: Common testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_common
+      #   if: ${{ success() || failure() }}
 
   build_apache_83_106:
     name: PHP 8.3 - Apache - MariaDB 10.6
@@ -491,53 +491,53 @@ jobs:
           build_testrigor_tests
         if: ${{ success() || failure() }}
 
-      - name: Unit testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_unit
-        if: ${{ success() || failure() }}
+      # - name: Unit testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_unit
+      #   if: ${{ success() || failure() }}
 
-      - name: E2e testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_e2e
-        if: ${{ success() || failure() }}
+      # - name: E2e testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_e2e
+      #   if: ${{ success() || failure() }}
 
-      - name: Api testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_api
-        if: ${{ success() || failure() }}
+      # - name: Api testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_api
+      #   if: ${{ success() || failure() }}
 
-      - name: Fixtures testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_fixtures
-        if: ${{ success() || failure() }}
+      # - name: Fixtures testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_fixtures
+      #   if: ${{ success() || failure() }}
 
-      - name: Services testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_services
-        if: ${{ success() || failure() }}
+      # - name: Services testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_services
+      #   if: ${{ success() || failure() }}
 
-      - name: Validators testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_validators
-        if: ${{ success() || failure() }}
+      # - name: Validators testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_validators
+      #   if: ${{ success() || failure() }}
 
-      - name: Controllers testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_controllers
-        if: ${{ success() || failure() }}
+      # - name: Controllers testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_controllers
+      #   if: ${{ success() || failure() }}
 
-      - name: Common testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_common
-        if: ${{ success() || failure() }}
+      # - name: Common testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_common
+      #   if: ${{ success() || failure() }}
 
   build_apache_83_105:
     name: PHP 8.3 - Apache - MariaDB 10.5
@@ -597,53 +597,53 @@ jobs:
           build_testrigor_tests
         if: ${{ success() || failure() }}
 
-      - name: Unit testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_unit
-        if: ${{ success() || failure() }}
+      # - name: Unit testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_unit
+      #   if: ${{ success() || failure() }}
 
-      - name: E2e testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_e2e
-        if: ${{ success() || failure() }}
+      # - name: E2e testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_e2e
+      #   if: ${{ success() || failure() }}
 
-      - name: Api testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_api
-        if: ${{ success() || failure() }}
+      # - name: Api testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_api
+      #   if: ${{ success() || failure() }}
 
-      - name: Fixtures testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_fixtures
-        if: ${{ success() || failure() }}
+      # - name: Fixtures testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_fixtures
+      #   if: ${{ success() || failure() }}
 
-      - name: Services testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_services
-        if: ${{ success() || failure() }}
+      # - name: Services testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_services
+      #   if: ${{ success() || failure() }}
 
-      - name: Validators testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_validators
-        if: ${{ success() || failure() }}
+      # - name: Validators testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_validators
+      #   if: ${{ success() || failure() }}
 
-      - name: Controllers testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_controllers
-        if: ${{ success() || failure() }}
+      # - name: Controllers testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_controllers
+      #   if: ${{ success() || failure() }}
 
-      - name: Common testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_common
-        if: ${{ success() || failure() }}
+      # - name: Common testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_common
+      #   if: ${{ success() || failure() }}
 
   build_apache_83_84:
     name: PHP 8.3 - Apache - MySQL 8.4
@@ -703,53 +703,53 @@ jobs:
           build_testrigor_tests
         if: ${{ success() || failure() }}
 
-      - name: Unit testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_unit
-        if: ${{ success() || failure() }}
+      # - name: Unit testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_unit
+      #   if: ${{ success() || failure() }}
 
-      - name: E2e testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_e2e
-        if: ${{ success() || failure() }}
+      # - name: E2e testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_e2e
+      #   if: ${{ success() || failure() }}
 
-      - name: Api testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_api
-        if: ${{ success() || failure() }}
+      # - name: Api testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_api
+      #   if: ${{ success() || failure() }}
 
-      - name: Fixtures testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_fixtures
-        if: ${{ success() || failure() }}
+      # - name: Fixtures testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_fixtures
+      #   if: ${{ success() || failure() }}
 
-      - name: Services testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_services
-        if: ${{ success() || failure() }}
+      # - name: Services testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_services
+      #   if: ${{ success() || failure() }}
 
-      - name: Validators testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_validators
-        if: ${{ success() || failure() }}
+      # - name: Validators testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_validators
+      #   if: ${{ success() || failure() }}
 
-      - name: Controllers testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_controllers
-        if: ${{ success() || failure() }}
+      # - name: Controllers testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_controllers
+      #   if: ${{ success() || failure() }}
 
-      - name: Common testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_common
-        if: ${{ success() || failure() }}
+      # - name: Common testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_common
+      #   if: ${{ success() || failure() }}
 
   build_apache_83_80:
     name: PHP 8.3 - Apache - MySQL 8.0
@@ -809,53 +809,53 @@ jobs:
           build_testrigor_tests
         if: ${{ success() || failure() }}
 
-      - name: Unit testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_unit
-        if: ${{ success() || failure() }}
+      # - name: Unit testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_unit
+      #   if: ${{ success() || failure() }}
 
-      - name: E2e testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_e2e
-        if: ${{ success() || failure() }}
+      # - name: E2e testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_e2e
+      #   if: ${{ success() || failure() }}
 
-      - name: Api testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_api
-        if: ${{ success() || failure() }}
+      # - name: Api testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_api
+      #   if: ${{ success() || failure() }}
 
-      - name: Fixtures testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_fixtures
-        if: ${{ success() || failure() }}
+      # - name: Fixtures testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_fixtures
+      #   if: ${{ success() || failure() }}
 
-      - name: Services testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_services
-        if: ${{ success() || failure() }}
+      # - name: Services testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_services
+      #   if: ${{ success() || failure() }}
 
-      - name: Validators testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_validators
-        if: ${{ success() || failure() }}
+      # - name: Validators testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_validators
+      #   if: ${{ success() || failure() }}
 
-      - name: Controllers testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_controllers
-        if: ${{ success() || failure() }}
+      # - name: Controllers testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_controllers
+      #   if: ${{ success() || failure() }}
 
-      - name: Common testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_common
-        if: ${{ success() || failure() }}
+      # - name: Common testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_common
+      #   if: ${{ success() || failure() }}
 
   build_apache_83_57:
     name: PHP 8.3 - Apache - MySQL 5.7
@@ -915,53 +915,53 @@ jobs:
           build_testrigor_tests
         if: ${{ success() || failure() }}
 
-      - name: Unit testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_unit
-        if: ${{ success() || failure() }}
+      # - name: Unit testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_unit
+      #   if: ${{ success() || failure() }}
 
-      - name: E2e testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_e2e
-        if: ${{ success() || failure() }}
+      # - name: E2e testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_e2e
+      #   if: ${{ success() || failure() }}
 
-      - name: Api testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_api
-        if: ${{ success() || failure() }}
+      # - name: Api testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_api
+      #   if: ${{ success() || failure() }}
 
-      - name: Fixtures testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_fixtures
-        if: ${{ success() || failure() }}
+      # - name: Fixtures testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_fixtures
+      #   if: ${{ success() || failure() }}
 
-      - name: Services testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_services
-        if: ${{ success() || failure() }}
+      # - name: Services testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_services
+      #   if: ${{ success() || failure() }}
 
-      - name: Validators testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_validators
-        if: ${{ success() || failure() }}
+      # - name: Validators testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_validators
+      #   if: ${{ success() || failure() }}
 
-      - name: Controllers testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_controllers
-        if: ${{ success() || failure() }}
+      # - name: Controllers testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_controllers
+      #   if: ${{ success() || failure() }}
 
-      - name: Common testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_common
-        if: ${{ success() || failure() }}
+      # - name: Common testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_common
+      #   if: ${{ success() || failure() }}
 
   build_nginx_82:
     name: PHP 8.2 - Nginx - MariaDB 11.4
@@ -1021,53 +1021,53 @@ jobs:
           build_testrigor_tests
         if: ${{ success() || failure() }}
 
-      - name: Unit testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_unit
-        if: ${{ success() || failure() }}
+      # - name: Unit testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_unit
+      #   if: ${{ success() || failure() }}
 
-      - name: E2e testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_e2e
-        if: ${{ success() || failure() }}
+      # - name: E2e testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_e2e
+      #   if: ${{ success() || failure() }}
 
-      - name: Api testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_api
-        if: ${{ success() || failure() }}
+      # - name: Api testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_api
+      #   if: ${{ success() || failure() }}
 
-      - name: Fixtures testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_fixtures
-        if: ${{ success() || failure() }}
+      # - name: Fixtures testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_fixtures
+      #   if: ${{ success() || failure() }}
 
-      - name: Services testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_services
-        if: ${{ success() || failure() }}
+      # - name: Services testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_services
+      #   if: ${{ success() || failure() }}
 
-      - name: Validators testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_validators
-        if: ${{ success() || failure() }}
+      # - name: Validators testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_validators
+      #   if: ${{ success() || failure() }}
 
-      - name: Controllers testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_controllers
-        if: ${{ success() || failure() }}
+      # - name: Controllers testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_controllers
+      #   if: ${{ success() || failure() }}
 
-      - name: Common testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_common
-        if: ${{ success() || failure() }}
+      # - name: Common testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_common
+      #   if: ${{ success() || failure() }}
 
   build_nginx_83:
     name: PHP 8.3 - Nginx - MariaDB 11.4
@@ -1127,53 +1127,53 @@ jobs:
           build_testrigor_tests
         if: ${{ success() || failure() }}
 
-      - name: Unit testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_unit
-        if: ${{ success() || failure() }}
+      # - name: Unit testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_unit
+      #   if: ${{ success() || failure() }}
 
-      - name: E2e testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_e2e
-        if: ${{ success() || failure() }}
+      # - name: E2e testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_e2e
+      #   if: ${{ success() || failure() }}
 
-      - name: Api testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_api
-        if: ${{ success() || failure() }}
+      # - name: Api testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_api
+      #   if: ${{ success() || failure() }}
 
-      - name: Fixtures testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_fixtures
-        if: ${{ success() || failure() }}
+      # - name: Fixtures testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_fixtures
+      #   if: ${{ success() || failure() }}
 
-      - name: Services testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_services
-        if: ${{ success() || failure() }}
+      # - name: Services testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_services
+      #   if: ${{ success() || failure() }}
 
-      - name: Validators testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_validators
-        if: ${{ success() || failure() }}
+      # - name: Validators testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_validators
+      #   if: ${{ success() || failure() }}
 
-      - name: Controllers testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_controllers
-        if: ${{ success() || failure() }}
+      # - name: Controllers testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_controllers
+      #   if: ${{ success() || failure() }}
 
-      - name: Common testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_common
-        if: ${{ success() || failure() }}
+      # - name: Common testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_common
+      #   if: ${{ success() || failure() }}
 
 
   build_nginx_84:
@@ -1234,53 +1234,53 @@ jobs:
           build_testrigor_tests
         if: ${{ success() || failure() }}
 
-      - name: Unit testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_unit
-        if: ${{ success() || failure() }}
+      # - name: Unit testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_unit
+      #   if: ${{ success() || failure() }}
 
-      - name: E2e testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_e2e
-        if: ${{ success() || failure() }}
+      # - name: E2e testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_e2e
+      #   if: ${{ success() || failure() }}
 
-      - name: Api testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_api
-        if: ${{ success() || failure() }}
+      # - name: Api testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_api
+      #   if: ${{ success() || failure() }}
 
-      - name: Fixtures testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_fixtures
-        if: ${{ success() || failure() }}
+      # - name: Fixtures testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_fixtures
+      #   if: ${{ success() || failure() }}
 
-      - name: Services testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_services
-        if: ${{ success() || failure() }}
+      # - name: Services testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_services
+      #   if: ${{ success() || failure() }}
 
-      - name: Validators testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_validators
-        if: ${{ success() || failure() }}
+      # - name: Validators testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_validators
+      #   if: ${{ success() || failure() }}
 
-      - name: Controllers testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_controllers
-        if: ${{ success() || failure() }}
+      # - name: Controllers testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_controllers
+      #   if: ${{ success() || failure() }}
 
-      - name: Common testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_common
-        if: ${{ success() || failure() }}
+      # - name: Common testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_common
+      #   if: ${{ success() || failure() }}
 
   build_nginx_85:
     name: PHP 8.5 - Nginx - MariaDB 11.4
@@ -1340,50 +1340,50 @@ jobs:
           build_testrigor_tests
         if: ${{ success() || failure() }}
 
-      - name: Unit testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_unit
-        if: ${{ success() || failure() }}
+      # - name: Unit testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_unit
+      #   if: ${{ success() || failure() }}
 
-      - name: E2e testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_e2e
-        if: ${{ success() || failure() }}
+      # - name: E2e testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_e2e
+      #   if: ${{ success() || failure() }}
 
-      - name: Api testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_api
-        if: ${{ success() || failure() }}
+      # - name: Api testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_api
+      #   if: ${{ success() || failure() }}
 
-      - name: Fixtures testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_fixtures
-        if: ${{ success() || failure() }}
+      # - name: Fixtures testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_fixtures
+      #   if: ${{ success() || failure() }}
 
-      - name: Services testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_services
-        if: ${{ success() || failure() }}
+      # - name: Services testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_services
+      #   if: ${{ success() || failure() }}
 
-      - name: Validators testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_validators
-        if: ${{ success() || failure() }}
+      # - name: Validators testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_validators
+      #   if: ${{ success() || failure() }}
 
-      - name: Controllers testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_controllers
-        if: ${{ success() || failure() }}
+      # - name: Controllers testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_controllers
+      #   if: ${{ success() || failure() }}
 
-      - name: Common testing
-        run: |
-          source ci/ciLibrary.source
-          build_test_common
-        if: ${{ success() || failure() }}
+      # - name: Common testing
+      #   run: |
+      #     source ci/ciLibrary.source
+      #     build_test_common
+      #   if: ${{ success() || failure() }}

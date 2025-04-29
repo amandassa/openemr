@@ -15,7 +15,7 @@ TEST_CASES_PATH="$WORKSPACE_DIR/tests/testRigor/testcases/**/*.txt"
 RULES_PATH="$WORKSPACE_DIR/tests/testRigor/rules/**/*.txt"
 H_AUTH_TOKEN="auth-token: $AUTH_TOKEN"
 echo "Running testRigor tests..."
-response=$(npx testrigor-cli test-suite run "$TEST_SUITE_ID" --token "$AUTH_TOKEN" --localhost --url "$LOCALHOST_URL" --test-cases-path "$TEST_CASES_PATH" --rules-path "$RULES_PATH" --branch "$BRANCH_NAME-$JOB_ID" --commit "$COMMIT_NAME-$JOB_ID") || failTest=true
+response=$(npx testrigor-cli test-suite run "$TEST_SUITE_ID" --token "$AUTH_TOKEN" --localhost --url "$LOCALHOST_URL" --test-cases-path "$TEST_CASES_PATH" --rules-path "$RULES_PATH" --branch "$BRANCH_NAME:$JOB_ID" --commit "$COMMIT_NAME:$JOB_ID") || failTest=true
 
 RUN_ID=$(echo "$response" | sed -n "s|.*/test-suites/$TEST_SUITE_ID/runs/\([^ \"]*\).*|\1|p")
 if [ -z "$RUN_ID" ]; then
@@ -34,7 +34,7 @@ echo "$RES" | jq -r '
               else "Passed" end)",
     "TEST CASES:",
     (.data.content[] | "\(.name) \(if .status == "Passed" then "✓" elif .status == "Cancelled" then "-" else "✖" end)")
-' | awk -v total="$(echo "$RES" | jq '.data.totalElements')" '
+' | awk -v total="$(echo "$RES" | jq '.data.totalElements')" -v failTestRef="$failTest" '
 BEGIN {
     print "\033[1mTEST RESULTS\033[0m"
     print "========================================"
@@ -74,7 +74,11 @@ NR==3 { print; next }
 END { 
     print "========================================"
     printf "\033[32m%d passing\033[0m  \033[31m%d failing\033[0m  \033[33m%d cancelled\033[0m\n", passed, failed, cancelled
+    if (failed > 0 || cancelled > 0) {
+        failTestRef = "true"
+    }
 }'
-if $failTest; then
+
+if [ "$failTest" = true ]; then
     exit 1
 fi

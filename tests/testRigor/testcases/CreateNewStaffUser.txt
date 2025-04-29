@@ -22,21 +22,15 @@ check that page contains input "Password"
 check that page contains button "Login"
 LoginAsStaff
 ValidateLogin
-logoutUser
-ValidateLogout
-close tab
 // Back to admin and clean up
-// switch to browser "default"
-LoginAndValidate
-NavigateToUsersGroups
+switch to browser "default"
+check that page contains "User / Groups"
 click saved value "generated_username"
 click "active__on" above the "mname"
 click button "Save"
 // assert is not in list anymore
 check that page contains "User / Groups"
 check that page doesn't contain saved value "generated_username"
-logoutUser
-ValidateLogout
-// start browser "Inactive Staff" and switch
+start browser "Inactive Staff" and switch
 LoginAsStaff
 ValidateUnsuccessfulLogin

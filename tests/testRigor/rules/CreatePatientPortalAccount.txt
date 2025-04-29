@@ -1,5 +1,8 @@
 click "Patient"
 click "Dashboard"
+NavigateToPatientFinder
+click string with parameters "${lastName}, ${firstName}"
+wait 1 sec up to 42 times until page contains "Patient Portal / API Access"
 click "Patient Portal / API Access" if page does not contain "Create" roughly below "Patient Portal"
 click "Create" roughly below "Patient Portal"
 click field "Password:"
