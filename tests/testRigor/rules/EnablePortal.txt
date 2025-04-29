@@ -1,0 +1,5 @@
+click "Admin"
+click "Config"
+click "Portal"
+click checkbox on the right of exactly "Enable Patient Portal" if checkbox on the right of exactly "Enable Patient Portal" is not checked
+click button "Save"

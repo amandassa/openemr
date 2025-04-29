@@ -1,4 +1,14 @@
 LoginAndValidate
-//validate user
+wait 3 minutes
+wait 3 minutes
+wait 3 minutes
+wait 3 minutes
+wait 3 minutes
+wait 3 minutes
+wait 3 minutes
+wait 3 minutes
+wait 3 minutes
+wait 3 minutes
+//valuser
 click "Current User"
 check that page contains "Administrator" above "Logout"
